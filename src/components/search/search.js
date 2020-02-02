@@ -2,6 +2,7 @@ import React from "react";
 import "./search.scss";
 import Header from "./../header/header.js";
 import SearchTab from "./../info.js";
+import { Link } from "react-router-dom";
 
 class Search extends React.Component {
   state = {
@@ -17,6 +18,8 @@ class Search extends React.Component {
   render() {
     console.log(this.state);
 
+    console.log(this.props);
+
     return (
       <>
         <Header></Header>
@@ -26,15 +29,15 @@ class Search extends React.Component {
             {this.state.Data.map(info => {
               return (
                 <React.Fragment key={info}>
-                  <div className="searchCard">
+                  <Link to={"/" + info.id} key={info.id} className="searchCard">
                     <div className="cardThumb">
-                        <img src={info.img} className="cardImg"/>
+                      <img src={info.img} className="cardImg" />
                     </div>
                     <div className="cardTextContain">
                       <h1>{info.title}</h1>
                     </div>
                     <div className="cardStats"></div>
-                  </div>
+                  </Link>
                 </React.Fragment>
               );
             })}

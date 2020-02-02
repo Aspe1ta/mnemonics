@@ -1,6 +1,7 @@
 import React from "react";
 import "./landing.scss";
 import Header from "./../header/header.js";
+import Search from "./../search/search.js"
 
 class Landing extends React.Component {
     
@@ -8,8 +9,10 @@ class Landing extends React.Component {
         console.log(event.target.search.value);
         event.preventDefault();
         this.props.history.push('/search');
+        
 
     }
+    
 
 
   
