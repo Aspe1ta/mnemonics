@@ -1,0 +1,42 @@
+
+.searchPage{
+    display: flex;
+    height: 100vh;
+}
+
+.resultContain{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10vh;
+    
+}
+
+.searchCard{
+    display: flex;
+    width: 90%;
+    height: 30%;
+    margin-top: 5vh;
+    justify-content: space-evenly;
+}
+
+.cardThumb{
+    width: 30%;
+    height: 20vh;
+    background-color: lightslategrey;
+}
+
+.cardTextContain{
+    width: 30%;
+    height: 20vh;
+    display: flex;
+}
+
+.cardStats{
+    width: 30%;
+    height: 20vh;
+    display: flex;
+    background-color: magenta;
+}
