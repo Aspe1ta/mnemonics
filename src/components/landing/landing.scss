@@ -1,0 +1,22 @@
+.landContain{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainContain{
+    width: 70vw;
+    height: 50vh;
+    background-color: indigo;
+    justify-content: space-evenly;
+}
+
+.mainLogoContain {
+
+    width: 100%;
+    text-align: center;
+}
+

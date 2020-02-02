@@ -1,0 +1,17 @@
+.header {
+    position: fixed;
+    display: flex;
+    height: 10vh;
+    width: 100vw;
+    background-color: black;
+    justify-content: start;
+    align-items: center;
+}
+
+.logoContain{
+    margin-left: 5vw;
+    display: flex;
+    height: 70%;
+    width:20%;
+    background-color: cadetblue;
+}
