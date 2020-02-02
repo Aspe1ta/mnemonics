@@ -27,7 +27,9 @@ class Search extends React.Component {
               return (
                 <React.Fragment key={info}>
                   <div className="searchCard">
-                    <div className="cardThumb"></div>
+                    <div className="cardThumb">
+                        <img src={info.img} className="cardImg"/>
+                    </div>
                     <div className="cardTextContain">
                       <h1>{info.title}</h1>
                     </div>

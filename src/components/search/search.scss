@@ -24,19 +24,25 @@
 
 .cardThumb{
     width: 30%;
-    height: 20vh;
-    background-color: lightslategrey;
+    height: 30vh;
+
+}
+
+.cardImg{
+    width: 100%;
+    height: 100%;
 }
 
 .cardTextContain{
     width: 30%;
-    height: 20vh;
+    height: 30vh;
     display: flex;
 }
 
 .cardStats{
     width: 30%;
-    height: 20vh;
+    height: 30vh;
     display: flex;
     background-color: magenta;
 }
+
