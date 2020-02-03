@@ -8,6 +8,8 @@ import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 class App extends React.Component {
 
+  
+
 
 
   render() {
@@ -20,7 +22,6 @@ console.log(this.state);
       <Router>
         <Switch>
           <Route path={"/"} exact component={Landing}/>
-          <Route path={"/search"} component={Search}/>
           <Route path={"/:id"} exact component={Main}/>
         </Switch>
       </Router>
