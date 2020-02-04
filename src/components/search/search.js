@@ -25,6 +25,9 @@ class Search extends React.Component {
         <Header></Header>
 
         <div className="searchPage">
+          <div className="qContain">
+            <h1>{this.props.q}</h1>
+          </div>
           <div className="resultContain">
             {this.state.Data.map(info => {
               return (

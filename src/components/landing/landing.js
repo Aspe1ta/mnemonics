@@ -66,7 +66,7 @@ class Landing extends React.Component {
       );
     } else {
         return (
-            <Search></Search>
+            <Search q={this.state.query}></Search>
         );
     }
     
