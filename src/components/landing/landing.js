@@ -3,34 +3,32 @@ import "./landing.scss";
 import Header from "./../header/header.js";
 import Search from "./../search/search.js";
 
+
+
 class Landing extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {query: "", mode: "land" };
+    this.state = { query: "", mode: "land", pull: [{}] };
 
     this.handleSave = this.handleSave.bind(this);
   }
 
   handleSave() {
-    this.setState({query: this.state.query, mode: "search" });
+    this.setState({ query: this.state.query, mode: "search" });
   }
 
   onFormSubmit = event => {
     console.log(event.target.search.value);
     event.preventDefault();
     this.handleSave();
-    this.setState({query: event.target.search.value, mode: "search"});
-    
-    
+    this.setState({ query: event.target.search.value, mode: "search" });
   };
 
 
-
   render() {
-
     console.log(this.state);
 
-    if (this.state.mode === "land"){
+    if (this.state.mode === "land") {
       return (
         <>
           <Header></Header>
@@ -65,14 +63,9 @@ class Landing extends React.Component {
         </>
       );
     } else {
-        return (
-            <Search q={this.state.query}></Search>
-        );
+      return <Search q={this.state.query} data={this.state.pull}></Search>;
     }
-    
-      
   }
 }
-
 
 export default Landing;
