@@ -19,7 +19,7 @@ class Search extends React.Component {
 
     axios
       .get(
-        `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=6&q=mnemonics%20${this.props.q}&type=video&videoEmbeddable=true&key=AIzaSyDIxd8DaBiX6oVmzZKne2MCud8CU14Flq0`
+        `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=6&q=memorization%20song%20${this.props.q}&type=video&videoEmbeddable=true&key=AIzaSyDIxd8DaBiX6oVmzZKne2MCud8CU14Flq0`
       )
       .then(response => {
         if (this.state.pull !== response.data.items) {
