@@ -26,7 +26,12 @@ class Landing extends React.Component {
 
 
   render() {
-    console.log(this.state);
+    console.log(this.props.location);
+    
+
+    if (this.props.location.pathname == !'/'){
+    this.setState({mode: "search"})
+    }
 
     if (this.state.mode === "land") {
       return (

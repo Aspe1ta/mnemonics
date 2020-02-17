@@ -1,7 +1,6 @@
 import React from "react";
 import "./App.css";
 import Landing from "./components/landing/landing.js";
-import Search from "./components/search/search.js";
 import Main from "./components/main/main.js"
 
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
