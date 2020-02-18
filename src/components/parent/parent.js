@@ -23,7 +23,7 @@ class Parent extends React.Component {
       </>
     ) } else {
       return(
-        <Search info={this.props.query} call={this.props.call}></Search>
+        <Search info={this.props.query} call={this.props.call} pull={this.props.pull}></Search>
       )
     } 
   }
