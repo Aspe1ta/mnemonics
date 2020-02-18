@@ -9,17 +9,20 @@ import axios from "axios";
 
 class Search extends React.Component {
   state = {
-    Data: [], pull: []
+    Data: '', pull: []
   };
 
+  
+
   componentDidMount() {
-    this.setState({
-      Data: SearchTab
-    });
+
+    
+
+    
 
     axios
       .get(
-        `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=6&q=memorization%20song%20${this.props.q}&type=video&videoEmbeddable=true&key=AIzaSyDIxd8DaBiX6oVmzZKne2MCud8CU14Flq0`
+        `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=6&q=memorize%20${this.props.info}&type=video&videoEmbeddable=true&key=AIzaSyDIxd8DaBiX6oVmzZKne2MCud8CU14Flq0`
       )
       .then(response => {
         if (this.state.pull !== response.data.items) {
@@ -29,12 +32,15 @@ class Search extends React.Component {
         }
       });
 
-  }
+  } 
+
+  
+    
 
   render() {
     
 
-    
+    console.log(this.props);
     
     console.log(this.state.pull.id);
 
@@ -44,7 +50,7 @@ class Search extends React.Component {
 
     return (
       <>
-        <Header></Header>
+        <Header call={this.props.call}></Header>
 
         <div className="searchPage">
           <div className="qContain">

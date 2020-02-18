@@ -9,26 +9,6 @@ class Main extends React.Component {
     video: {}
   }
 
-  componentDidMount() {
-    
-    axios
-      .get(
-        `https://www.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&id=${this.props.match.params.id}&key=AIzaSyByPGQ3kx8Ntul3z91-7f8odXiSgumVLa0`
-      )
-      .then(response => {
-
-        console.log(response);
-
-        if (this.state.video !== response.data.items) {
-          
-          this.setState({
-            video: response.data.items
-          });
-        }
-      });
-
-  }
-
   
     render() {
 

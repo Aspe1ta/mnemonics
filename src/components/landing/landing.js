@@ -8,7 +8,7 @@ import Search from "./../search/search.js";
 class Landing extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { query: "", mode: "land", pull: [{}] };
+    this.state = { query: "", mode: "land", pull: [{}], update: 0 };
 
     this.handleSave = this.handleSave.bind(this);
   }
@@ -17,26 +17,16 @@ class Landing extends React.Component {
     this.setState({ query: this.state.query, mode: "search" });
   }
 
-  onFormSubmit = event => {
-    console.log(event.target.search.value);
-    event.preventDefault();
-    this.handleSave();
-    this.setState({ query: event.target.search.value, mode: "search" });
-  };
+
 
 
   render() {
     console.log(this.props.location);
     
 
-    if (this.props.location.pathname == !'/'){
-    this.setState({mode: "search"})
-    }
-
-    if (this.state.mode === "land") {
       return (
         <>
-          <Header></Header>
+          <Header call={this.props.call} ></Header>
 
           <div className="landContain">
             <div className="mainContain">
@@ -44,7 +34,7 @@ class Landing extends React.Component {
                 <h1>Mnemonicon</h1>
               </div>
               <div className="mainSearch">
-                <form onSubmit={this.onFormSubmit}>
+                <form onSubmit={this.props.call}>
                   <input
                     name={"search"}
                     type="search"
@@ -67,9 +57,7 @@ class Landing extends React.Component {
           </div>
         </>
       );
-    } else {
-      return <Search q={this.state.query} data={this.state.pull}></Search>;
-    }
+    
   }
 }
 
