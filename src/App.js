@@ -64,7 +64,13 @@ class App extends React.Component {
               />
             )}
           />
-          <Route path={"/:id"} component={Main} />
+          <Route path={"/:id"} render={props => (
+              <Main
+                {...props}
+                query={this.state.query.replace(" ", "%20")}
+                pull={this.state.pull}
+              />
+            )} />
         </Switch>
       </Router>
     );
