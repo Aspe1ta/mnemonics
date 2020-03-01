@@ -45,8 +45,9 @@
 
 }
 
-form {
+.mainForm {
     display:flex;
+    align-items: center;
     border:solid 3px rgb(3, 3, 3);
       border-radius: 40px;
       box-sizing:border-box;
@@ -54,12 +55,12 @@ form {
       height:2em;
       outline:solid #fc0 0;
       transition:all 2s ease-in;
-      width:30vw;
+      width:50vw;
       background: url(./../../assets/search.png) no-repeat left 10px top 10px;
       background-size: 40px;
     input[type=search] {
 
-        width: 80%;
+        width: 72%;
         height: 100%;
         border:transparent;
         font-size:1em;
@@ -77,3 +78,38 @@ form {
     }
     
   }
+
+.searchButton{
+    background-color: transparent;
+    border-radius: 40px;
+    border-color: red;;
+    height: 80%;
+    width: 20%;
+    color: red;
+    margin-right: 2%;
+}
+
+
+.buttonContain{
+    display: flex;
+    justify-content: space-evenly;
+    width: 40vw;
+    
+}
+
+.buttonLink{
+    height: 80%;
+    width: 20%;
+}
+
+.bottomButtons{
+    border-radius: 40px;
+    border-color: transparent;
+    background-color: red;
+    height: 100%;
+    width: 100%;
+    color: white;
+    margin-right: 2%;
+    height: 5vh;
+}
+

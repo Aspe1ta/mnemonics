@@ -30,7 +30,7 @@ class Search extends React.Component {
               return (
                 <React.Fragment>
                   <Link
-                    to={"/" + info.id.videoId}
+                    to={"/video/" + info.id.videoId}
                     key={info.id.videoId}
                     className="searchCard"
                   >

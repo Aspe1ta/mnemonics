@@ -7,6 +7,9 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Parent from "./components/parent/parent";
 import axios from "axios";
 
+import Login from "./components/login/login.js";
+import Signup from "./components/signup/signup.js";
+
 class App extends React.Component {
   state = { query: "", mode: "land", update: 0, pull: [] };
 
@@ -64,13 +67,17 @@ class App extends React.Component {
               />
             )}
           />
-          <Route path={"/:id"} render={props => (
+          <Route path={"/video/:id"} render={props => (
               <Main
                 {...props}
                 query={this.state.query.replace(" ", "%20")}
                 pull={this.state.pull}
               />
             )} />
+
+          <Route path="/login" exact component={Login} />
+          <Route path="/signUp" exact component={Signup} />
+
         </Switch>
       </Router>
     );
