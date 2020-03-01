@@ -19,12 +19,17 @@ class Login extends React.Component {
                 <form className="loginForm">
                     <input className="loginInput" placeholder="Username"></input>
                     <input className="loginInput" type="password" placeholder="Password"></input>
+                    <div className="bottomFormContain">
+                        <p className="loginBottomText">idk what this text says</p>
+                        <button className="loginButton">Login</button>
+                    </div>
                 </form>
             </div>
 
             <div className="registerContain">
 
             </div>
+
           </div>
         </>
       );
