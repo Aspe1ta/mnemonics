@@ -3,7 +3,7 @@ import "./landing.scss";
 import Header from "./../header/header.js";
 import Search from "./../search/search.js";
 
-
+import searchIcon from "./../../assets/search.png"
 
 class Landing extends React.Component {
   constructor(props) {
