@@ -48,15 +48,13 @@
 .mainForm {
     display:flex;
     align-items: center;
-    border:solid 3px rgb(3, 3, 3);
-      border-radius: 40px;
+    border:solid 3px #BE3D51;
+      border-radius: 10px;
       box-sizing:border-box;
       font-size:2em;
       height:2em;
-      outline:solid #fc0 0;
       transition:all 2s ease-in;
       width:50vw;
-      background: url(./../../assets/search.png) no-repeat left 10px top 10px;
       background-size: 40px;
     input[type=search] {
 
@@ -67,7 +65,7 @@
         outline:solid #fc0 0;
         transition:all 2s ease-in;
         z-index:1;
-        margin-left: 60px;
+        margin-left: 15px;
         background-color: transparent;
       
 
@@ -80,13 +78,17 @@
   }
 
 .searchButton{
-    background-color: transparent;
-    border-radius: 40px;
-    border-color: red;;
+
+    border-radius: 10px;
+    
+    
+    background-color: #BE3D51;
     height: 80%;
     width: 20%;
-    color: red;
+    color: white;
     margin-right: 2%;
+    border-color: transparent;
+    
 }
 
 

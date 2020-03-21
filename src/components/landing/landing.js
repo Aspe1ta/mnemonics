@@ -32,7 +32,7 @@ class Landing extends React.Component {
             </div>
             <div className="mainSearch">
               <form className="mainForm" onSubmit={this.props.call}>
-                <input name={"search"} type="search" placeholder="Search..." />
+                <input name={"search"} type="search" placeholder="What do you want to learn today?" />
                 <button className="searchButton">Search</button>
               </form>
             </div>

@@ -16,10 +16,11 @@ class Header extends React.Component {
           </div>
 
           <div className="mainSearch">
-            <form onSubmit={this.props.call}>
-              <input name={"search"} type="search" placeholder="Search..." />
-            </form>
-          </div>
+              <form className="mainForm" onSubmit={this.props.call}>
+                <input name={"search"} type="search" placeholder="What do you want to learn today?" />
+                <button className="searchButton">Search</button>
+              </form>
+            </div>
 
         </div>
       </>
