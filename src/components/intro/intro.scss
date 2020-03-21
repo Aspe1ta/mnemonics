@@ -1,0 +1,58 @@
+.IntroContain{
+    
+    display: flex;
+    height: 70vh;
+    width: 100%;
+    padding-top: 15vh;
+}
+
+.IntroInfoContain{
+    width: 30%;
+    height: 70%;
+    margin-right: 10%;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.IntroExampleBoxes{
+    height: 40%;
+    background-color: slateblue;
+}
+
+.TryButton{
+    margin-top: 5%;
+    border-radius: 3px;
+    background-color: #D0D0D0;
+    text-decoration: none;
+    width: 45%;
+    &:hover{
+        background-color: rgb(212, 212, 212);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+}
+
+.tryText{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+.introTitleText{
+    font-size: 4em;
+    margin: 0;
+}
+
+.introSubtitleText{
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.IntroImgContain{
+    width: 40%;
+}
+
+.IntroImg{
+    width: 100%;
+    height: 100%;
+}

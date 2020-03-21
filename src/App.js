@@ -2,6 +2,8 @@ import React from "react";
 import "./App.css";
 import Landing from "./components/landing/landing.js";
 import Main from "./components/main/main.js";
+import Intro from "./components/intro/intro.js";
+import API from "./components/info.js"
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Parent from "./components/parent/parent";
@@ -35,7 +37,7 @@ class App extends React.Component {
 
     axios
       .get(
-        `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=6&q=memorize%20${e.replace(" ", "%20")}&type=video&videoEmbeddable=true&key=AIzaSyDIxd8DaBiX6oVmzZKne2MCud8CU14Flq0`
+        `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=6&q=memorize%20${e.replace(" ", "%20")}&type=video&videoEmbeddable=true&key=${API}`
       )
       .then(response => {
         if (this.state.query == e) {
@@ -56,6 +58,15 @@ class App extends React.Component {
         <Switch>
           <Route
             path={"/"}
+            exact
+            render={props => (
+              <Intro
+                {...props}
+              />
+            )}
+          />
+          <Route
+            path={"/search"}
             exact
             render={props => (
               <Parent
