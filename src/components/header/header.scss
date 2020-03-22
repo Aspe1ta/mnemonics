@@ -6,6 +6,7 @@
     justify-content: start;
     align-items: center;
     z-index: 2;
+    background-color: white;
 }
 
 .logoContain{
@@ -14,4 +15,86 @@
     height: 70%;
     width:20%;
     background-color: cadetblue;
+}
+
+.HeadermainForm {
+    display:flex;
+    align-items: center;
+    border:solid 2px #BE3D51;
+      border-radius: 16px;
+      box-sizing:border-box;
+      font-size:2em;
+      height:1.5em;
+      transition:all 2s ease-in;
+      width:35vw;
+      background-size: 40px;
+    input[type=search] {
+
+        width: 72%;
+        height: 100%;
+        border:transparent;
+        font-size:1em;
+        outline:solid #fc0 0;
+        transition:all 2s ease-in;
+        z-index:1;
+        margin-left: 15px;
+        background-color: transparent;
+      
+
+      &:focus {
+        // border:solid 3px #09f;      
+        // outline:solid #fc0 2000px;
+    }
+    }
+    
+  }
+
+.HeadersearchButton{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    border-radius: 16px;
+    
+    
+    background-color: #BE3D51;
+    height: 80%;
+    width: 20%;
+    color: white;
+    margin-left: auto;
+    margin-right: 1%;
+    border-color: transparent;
+    
+}
+
+.headerLinkContain{
+    display: flex;
+    width: 15%;
+    justify-content: space-evenly;
+    margin-left: 20%;
+}
+
+.AboutLink{
+    text-decoration: none;
+}
+
+.SignLink{
+    text-decoration: none;
+}
+
+.bottomButtons{
+    color: red;
+}
+
+.searchIcon{
+    height: 90%;
+    width: 30%;
+    margin-right: 10%;
+}
+
+.HeadersearchButtonText{
+    margin: 0px;
+    font-size: 1em;
+    margin-right: auto;
 }

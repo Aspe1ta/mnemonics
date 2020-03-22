@@ -48,8 +48,8 @@
 .mainForm {
     display:flex;
     align-items: center;
-    border:solid 3px #BE3D51;
-      border-radius: 10px;
+    border:solid 2px #BE3D51;
+      border-radius: 16px;
       box-sizing:border-box;
       font-size:2em;
       height:2em;
@@ -79,39 +79,27 @@
 
 .searchButton{
 
-    border-radius: 10px;
+    border-radius: 16px;
     
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     
     background-color: #BE3D51;
     height: 80%;
     width: 20%;
     color: white;
-    margin-right: 2%;
+    margin-left: auto;
+    margin-right: 1%;
     border-color: transparent;
     
 }
 
 
-.buttonContain{
-    display: flex;
-    justify-content: space-evenly;
-    width: 40vw;
-    
+.searchButtonText{
+    margin: 0px;
+    font-size: 1.5em;
+    margin-right: auto;
 }
 
-.buttonLink{
-    height: 80%;
-    width: 20%;
-}
-
-.bottomButtons{
-    border-radius: 40px;
-    border-color: transparent;
-    background-color: red;
-    height: 100%;
-    width: 100%;
-    color: white;
-    margin-right: 2%;
-    height: 5vh;
-}
 

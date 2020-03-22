@@ -12,10 +12,12 @@ class Search extends React.Component {
     pull: []
   };
 
-  
+
 
 
   render() {
+
+    console.log(this.state.pull)
 
     return (
       <>
@@ -40,10 +42,15 @@ class Search extends React.Component {
                         className="cardImg"
                       />
                     </div>
+                    
                     <div className="cardTextContain">
-                      <h1>{info.snippet.title}</h1>
+                      <h3 className="cardText">{info.snippet.title}</h3>
+                      <div className="ByContain">
+                        <h3 className="By">By:</h3>
+                        <h4 className="channelName">{info.snippet.channelTitle}</h4>
+                      </div>
+                      
                     </div>
-                    <div className="cardStats"></div>
                   </Link>
                 </React.Fragment>
               );

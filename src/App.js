@@ -37,7 +37,7 @@ class App extends React.Component {
 
     axios
       .get(
-        `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=6&q=memorize%20${e.replace(" ", "%20")}&type=video&videoEmbeddable=true&key=${API}`
+        `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=12&q=memorize%20${e.replace(" ", "%20")}&type=video&videoEmbeddable=true&key=${API}`
       )
       .then(response => {
         if (this.state.query == e) {
