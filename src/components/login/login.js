@@ -1,6 +1,7 @@
 import React from "react";
 import "./login.scss";
 import Header from "./../header/header.js";
+import { Link } from "react-router-dom";
 
 
 class Login extends React.Component {
@@ -27,7 +28,14 @@ class Login extends React.Component {
             </div>
 
             <div className="registerContain">
-
+              <h1>Don't have an account?</h1>
+              <Link
+                    to={"/signUp" }
+                    key="signUp"
+                    className="signUpButton"
+                  >
+                  <h2>Sign Up</h2>
+              </Link>
             </div>
 
           </div>

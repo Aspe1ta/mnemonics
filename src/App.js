@@ -11,6 +11,7 @@ import axios from "axios";
 
 import Login from "./components/login/login.js";
 import Signup from "./components/signup/signup.js";
+import Verified from "./components/verified/verified";
 
 class App extends React.Component {
   state = { query: "", mode: "land", update: 0, pull: [] };
@@ -88,6 +89,7 @@ class App extends React.Component {
 
           <Route path="/login" exact component={Login} />
           <Route path="/signUp" exact component={Signup} />
+          <Route path="/verified" exact component={Verified} />
 
         </Switch>
       </Router>
