@@ -1,0 +1,126 @@
+.mainVidContain{
+    display: flex;
+    margin-left: 10vw;
+    padding-top: 10vh;
+    width: 80vw;
+}
+
+.mainVideoContain{
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.titleBar{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    align-items: center;
+
+}
+
+.mainVideoName{
+margin: 0px;
+height: fit-content;
+white-space: nowrap;
+width: fit-content;
+margin-right: 5%;
+}
+
+.line{
+    height: 1px;
+    background-color: black;
+    width: 100%;
+    margin-right: 5%;
+}
+
+.likeContain{
+
+}
+
+.likeButton{
+    width: 100%;
+}
+
+
+.embedContain{
+    margin-top: 1%;
+    width: 95%;
+    height: 100%;
+}
+
+
+.channelInfoContain{
+    margin-top: 1%;
+    display: flex;
+    height: 10%;
+    align-items: center;
+}
+
+.profilePicContain{
+height: 80%;
+margin-right: 2%;
+border-radius: 50%;
+border: 5px solid white;
+}
+
+.profilePic{
+    height: 100%;
+}
+
+.channelTextContain{
+
+display: flex;
+align-items: center;
+}
+
+/////////// Right Side
+
+
+.mainRight{
+    width: 35%;
+    margin-top: 2%;
+}
+
+.studyContain{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.segmentHeader{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    align-items: center;
+    height: 100%;
+}
+
+.relatedContain{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.mainResultContain{
+    display: flex; 
+    flex-direction: column;
+    width: 25vw;
+    height: 50vh;
+    overflow-y: scroll;
+}
+
+.mainSearchCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 90%;
+    margin-top: 2%;
+    margin-left: auto;
+    justify-content: space-evenly;
+    border-style: solid;
+    border: black 2px thin;
+    text-decoration: none;
+    border-color: black;
+}
