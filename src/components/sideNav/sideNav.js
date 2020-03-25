@@ -22,7 +22,7 @@ class SideNav extends React.Component {
         </Link>
 
         <Link
-                    to={"/search"}
+                    to={"/studyGroups"}
                     className="sideNavLink"
         >
             <img className="sideNavImg" src={home}/>
@@ -30,7 +30,7 @@ class SideNav extends React.Component {
         </Link>
 
         <Link
-                    to={"/search"}
+                    to={"/notBuilt"}
                     className="sideNavLink"
         >
             <img className="sideNavImg" src={home}/>
@@ -46,7 +46,7 @@ class SideNav extends React.Component {
         </Link>
 
         <Link
-                    to={"/search"}
+                    to={"/notBuilt"}
                     className="sideNavLink"
         >
             <img className="sideNavImg" src={home}/>
@@ -54,7 +54,7 @@ class SideNav extends React.Component {
         </Link>
 
         <Link
-                    to={"/search"}
+                    to={"/notBuilt"}
                     className="sideNavLink"
         >
             <img className="sideNavImg" src={home}/>

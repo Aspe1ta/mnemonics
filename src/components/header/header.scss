@@ -70,21 +70,50 @@
 
 .headerLinkContain{
     display: flex;
-    width: 15%;
     justify-content: space-evenly;
-    margin-left: 20%;
+    align-items: center;
+    height: 50%;
+    width: 50%;
+    margin-left: 10%;
+    
 }
 
 .AboutLink{
     text-decoration: none;
+    
 }
 
 .SignLink{
     text-decoration: none;
+    
 }
+
+.SignUpLink{
+    display: flex;
+    align-items: center;
+    height: 90%;
+
+    text-decoration: none;
+    width: 25%;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+}
+
 
 .bottomButtons{
     color: red;
+}
+
+.bottomButtonsSign{
+    padding-bottom: 10%;
+    padding-top: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 100%;
+    color: white;
+    margin: 0px;
+    text-align: center;
 }
 
 .searchIcon{
@@ -97,4 +126,10 @@
     margin: 0px;
     font-size: 1em;
     margin-right: auto;
+}
+
+.headerMainSearch{
+    display: flex;
+    justify-content: center;
+    width: 35%;
 }

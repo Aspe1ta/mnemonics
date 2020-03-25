@@ -3,7 +3,10 @@
     margin-left: 10vw;
     padding-top: 10vh;
     width: 80vw;
+    height: 85vh;
 }
+
+
 
 .mainVideoContain{
     margin-top: 2%;
@@ -73,6 +76,21 @@ border: 5px solid white;
 
 display: flex;
 align-items: center;
+
+}
+
+.descriptionContain{
+    display: flex;
+    width: 100%;
+    height: 20%;
+    overflow-y: scroll;
+    border-left: solid 2px black;
+}
+
+.descriptionTextContain{
+    font-size: 1em;
+    margin: 0px;
+    margin-left: 1%;
 }
 
 /////////// Right Side
@@ -89,6 +107,24 @@ align-items: center;
     width: 100%;
 }
 
+.studyVidContain{
+ display: flex;
+ align-items: center;
+ width: 95%;
+ margin-left: 5%;
+ margin-top: 2%;
+ cursor: pointer;
+}
+
+.studyImgContain{
+    width: 10%;
+    margin-right: 10%;
+}
+
+.studyImg{
+    width: 100%;
+}
+
 .segmentHeader{
     display: flex;
     flex-wrap: nowrap;
@@ -101,13 +137,14 @@ align-items: center;
     display: flex;
     flex-direction: column;
     width: 100%;
+    
 }
 
 .mainResultContain{
     display: flex; 
     flex-direction: column;
     width: 25vw;
-    height: 50vh;
+    height: 60vh;
     overflow-y: scroll;
 }
 
@@ -123,4 +160,54 @@ align-items: center;
     border: black 2px thin;
     text-decoration: none;
     border-color: black;
+}
+
+
+
+//////////////////////////////////////// QUIZ
+
+.optionContain{
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+}
+
+.answer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3vw;
+    width: 3vw;
+    
+    border: 1px black solid;
+    border-radius: 50%;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.answerButtonText{
+    margin: 0px;
+}
+
+.answerText{
+    margin-left: 5%;
+}
+
+.green{
+    background-color: green;
+}
+
+.red{
+    background-color: red;
+}
+
+.right{
+    color: green;
+    margin-left: auto;
+}
+
+.wrong{
+    color: red;
+    margin-left: auto;
 }

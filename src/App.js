@@ -11,7 +11,9 @@ import axios from "axios";
 
 import Login from "./components/login/login.js";
 import Signup from "./components/signup/signup.js";
-import Verified from "./components/verified/verified";
+import Verified from "./components/verified/verified.js";
+import StudyGroup from "./components/studyGroup/studyGroup.js";
+import Kin201 from "./components/kin201/kin201";
 
 class App extends React.Component {
   state = { query: "", mode: "land", update: 0, pull: [] };
@@ -90,6 +92,8 @@ class App extends React.Component {
           <Route path="/login" exact component={Login} />
           <Route path="/signUp" exact component={Signup} />
           <Route path="/verified" exact component={Verified} />
+          <Route path="/studyGroups" exact component={StudyGroup} />
+          <Route path="/kin201" exact component={Kin201} />
 
         </Switch>
       </Router>

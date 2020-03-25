@@ -1,6 +1,6 @@
 
 
-const API = "AIzaSyB2ZF9zbfdOwxqbsFZ7_6RczLEU673em9w";
+const API = "AIzaSyAsfbaRDLIOrSCK7JqTPGYMbr62c6eWnak";
 
 export default API;
 

@@ -15,13 +15,24 @@ class Verified extends React.Component {
           <Header></Header>
           
           <div className="loginContain">
-            <div className="formContain">
-                <h1 className="loginText">Verified!</h1>
+          <div className="formContain">
+            <h1 className="loginText">Sign Up</h1>
+            <form className="loginForm">
+              <div className="verBottomFormContain">
                 
-            </div>
 
-            
+                <Link to={"/search"} key="login" className="loginButton">
+                  <h2>Learn</h2>
+                </Link>
+              </div>
+            </form>
           </div>
+
+          <div className="registerContain">
+            <h1>You're on you way to easily learning new things!</h1>
+          </div>
+        </div>
+      
         </>
       );
     
