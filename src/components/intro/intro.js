@@ -11,6 +11,8 @@ class Intro extends React.Component {
         <Header></Header>
         <div>
           <div className="IntroContain">
+
+            <div className="introLeft">
             <div className="IntroInfoContain">
               <h1 className="introTitleText">
                 Learning Made <span>EASY.</span>
@@ -20,21 +22,28 @@ class Intro extends React.Component {
                 fun mnemonics:
               </h3>
 
-              <div className="IntroExampleBoxes">
-                <p>imgs go here</p>
-              </div>
-
               <Link to="/search" className="TryButton">
                 <h2 className="tryText">Try It Now!</h2>
               </Link>
             </div>
 
-            <div className="IntroImgContain">
-              <img className="IntroImg" src={introImg} />
-            </div>
           </div>
 
-          <div className="arrowContain"></div>
+          <div className="IntroImgContain">
+              <img className="IntroImg" src={introImg} />
+            </div>
+
+          <div className="arrowContain">
+            <div className="arrow"> </div>
+          </div>
+
+          <div className= "introRight">
+            
+          </div>
+
+          </div>
+
+          
 
           <div className="howContain">
             <h2 className="introSecTextW">How it works</h2>
