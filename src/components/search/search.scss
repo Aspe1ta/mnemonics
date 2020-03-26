@@ -44,6 +44,7 @@
     margin-left: 3%;
     justify-content: space-evenly;
     border: #02012F 2px solid;
+    border-radius: 5px;
     text-decoration: none;
     border-color: #02012F;
     -webkit-animation:slide-in-right 3s cubic-bezier(.25,.46,.45,.94) both;animation:slide-in-right 3s cubic-bezier(.25,.46,.45,.94) both;
@@ -67,7 +68,8 @@
     margin-bottom: 5%;
     margin-left: auto;
     justify-content: space-evenly;
-    border: #02012F 2px solid;
+    border: #02012F 4px solid;
+    border-radius: 5px;
     text-decoration: none;
     border-color: #02012F;
     -webkit-animation:slide-in-fwd-bottom .4s cubic-bezier(.25,.46,.45,.94) both;animation:slide-in-fwd-bottom .4s cubic-bezier(.25,.46,.45,.94) both

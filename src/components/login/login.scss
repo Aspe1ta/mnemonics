@@ -10,7 +10,7 @@ margin-left: 5vw;
     margin-top: 10vh;
     height:70vh;
     width:30vw;
-    background-color:black;
+    background-color:#02012F;
     margin-left: 10vw;
 }
 
@@ -37,6 +37,8 @@ height: 50%;
     margin-top: 2%;
     border-radius: 40px;
     border-color: transparent;
+    padding-left: 3%;
+    font-size: 2em;
     
 }
 
@@ -51,7 +53,7 @@ font-weight: 500;
 }
 
 .loginBottomText{
-
+margin: 0px;
 }
 
 .loginButton{
@@ -61,9 +63,9 @@ font-weight: 500;
     height: 70%;
     width: 30%;
     border-radius: 4px;
-    background-color: rgb(156, 15, 50);
+    background-color: #FADC31;
     border-color: transparent;
-    color: white;
+    color: #02012F;
     font-size: 1em;
     font-weight: 600;
     text-decoration: none;
@@ -78,12 +80,13 @@ font-weight: 500;
     text-align: center;
     width: 35vw;
     height: 50vh;
+    -webkit-animation:slide-in-right 3s cubic-bezier(.25,.46,.45,.94) both;animation:slide-in-right 3s cubic-bezier(.25,.46,.45,.94) both;
 }
 
 .signUpButton{
     width: 20%;
     height: 10%;
-    background-color: black;
+    background-color: #02012F;
     display: flex;
     justify-content: center;
     align-items: center;

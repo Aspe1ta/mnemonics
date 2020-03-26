@@ -29,7 +29,7 @@ console.log(this.props.call);
       <>
         <div className="header">
           <div className="logoContain">
-            <div className="logo">Logo Here</div>
+            <h1 className="logo">Sour Watermelon</h1>
           </div>
 
           {search}

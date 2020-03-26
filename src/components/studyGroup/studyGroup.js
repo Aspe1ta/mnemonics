@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import Header from "./../header/header.js";
 import SideNav from "./../sideNav/sideNav.js";
 
-import study from "./../../assets/StudyGroups.PNG"
+import study from "./../../assets/StudyGroups.png";
 
 
 class StudyGroup extends React.Component {

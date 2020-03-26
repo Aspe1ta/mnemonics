@@ -5,10 +5,10 @@ import { Link } from 'react-router-dom';
 import Header from "./../header/header.js";
 import SideNav from "./../sideNav/sideNav.js";
 
-import KIN from "./../../assets/KIN.png"
+import Save from "./../../assets/SavedVideos.png"
 
 
-class Kin201 extends React.Component {
+class Saved extends React.Component {
 
   
   render() {
@@ -20,12 +20,13 @@ class Kin201 extends React.Component {
     <Header></Header>
     <SideNav></SideNav>
 
-        <Link to="kin201" className="ImgContain">
-            <img className="StudyGroupImg" src={KIN}/>
-        </Link>
+        <div to="kin201" className="ImgContain">
+            <img className="StudyGroupImg" src={Save}/>
+        </div>
+
       </>
     );
   }
 }
 
-export default Kin201;
+export default Saved;

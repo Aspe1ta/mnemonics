@@ -20,7 +20,7 @@ class Login extends React.Component {
                 placeholder="Password"
               ></input>
               <div className="bottomFormContain">
-                <p className="loginBottomText">idk what this text says</p>
+                <h4 className="loginBottomText">Forgot Your Password?</h4>
                 <Link to={"/search"} key="login" className="loginButton">
                   <h2>Login</h2>
                 </Link>

@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Link } from 'react-router-dom';
+import "./construction.scss";
 
 import Header from "./../header/header.js";
 import SideNav from "./../sideNav/sideNav.js";
@@ -8,7 +8,7 @@ import SideNav from "./../sideNav/sideNav.js";
 import KIN from "./../../assets/KIN.png"
 
 
-class Kin201 extends React.Component {
+class Construction extends React.Component {
 
   
   render() {
@@ -20,12 +20,12 @@ class Kin201 extends React.Component {
     <Header></Header>
     <SideNav></SideNav>
 
-        <Link to="kin201" className="ImgContain">
-            <img className="StudyGroupImg" src={KIN}/>
-        </Link>
+        <div className="constructionText">
+          <h1>Unfortunately This Feature Is Unavailable Right Now</h1>
+        </div>
       </>
     );
   }
 }
 
-export default Kin201;
+export default Construction;

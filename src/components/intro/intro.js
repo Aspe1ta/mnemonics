@@ -95,17 +95,17 @@ class Intro extends React.Component {
                 </p>
               </div>
 
-              <div className="abcContain">
+              <ScrollAnimation animateIn="fromRight" className="abcContain">
                 <img src={ABC} className="IntroImg"/>
-              </div>
+              </ScrollAnimation>
             </div>
 
             <div className="textImgContain">
               
 
-              <div className="screenContain">
+              <ScrollAnimation animateIn="fromLeft" className="screenContain">
                 <img src={Screen} className="IntroImg"/>
-              </div>
+              </ScrollAnimation>
 
               <div className="aboutWhatContain">
                 <h1 className="whatHeader">What We Do</h1>

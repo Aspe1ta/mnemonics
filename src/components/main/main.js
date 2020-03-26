@@ -6,7 +6,10 @@ import SideNav from "./../sideNav/sideNav.js";
 import axios from "axios";
 import API from "./../info.js";
 import { Link } from "react-router-dom";
+import vid from "./../../assets/vid.png";
+import quiztab from "./../../assets/QuizTab.png";
 import home from "./../../assets/Home.png";
+
 
 let ScrollLink = Scroll.Link;
 let Element = Scroll.Element;
@@ -102,7 +105,7 @@ class Main extends React.Component {
         className="studyVidContain"
       >
         <div className="studyImgContain">
-          <img src={home} className="studyImg" />
+          <img src={quiztab} className="studyImg" />
         </div>
         <p>Quiz</p>
       </ScrollLink>;
@@ -119,7 +122,7 @@ class Main extends React.Component {
               <div className="line"></div>
             </div>
 
-            <h3 className="Question">Question: Who you gonna call?</h3>
+            <h3 className="Question">Question: In the song, Mother represents what planet?</h3>
 
             <h3 className="Question">Chose 1 answer</h3>
 
@@ -135,7 +138,7 @@ class Main extends React.Component {
                 <h1 className="answerButtonText">A</h1>
               </button>
 
-              <h2 className="answerText">Ghost Busters</h2>
+              <h2 className="answerText">Mars</h2>
               {answeredRight}
             </div>
 
@@ -151,7 +154,7 @@ class Main extends React.Component {
                 <h1 className="answerButtonText">B</h1>
               </button>
 
-              <h2 className="answerText">Saul</h2>
+              <h2 className="answerText">Mercury</h2>
               {answeredWrong}
             </div>
 
@@ -167,7 +170,7 @@ class Main extends React.Component {
                 <h1 className="answerButtonText">C</h1>
               </button>
 
-              <h2 className="answerText"> 567 1111</h2>
+              <h2 className="answerText">Mayonnaise</h2>
               {answeredWrong}
             </div>
 
@@ -237,7 +240,7 @@ class Main extends React.Component {
 
               <div className="studyVidContain">
                 <div className="studyImgContain">
-                  <img src={home} className="studyImg" />
+                  <img src={vid} className="studyImg" />
                 </div>
                 <p>Video</p>
               </div>

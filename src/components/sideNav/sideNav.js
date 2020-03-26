@@ -44,7 +44,7 @@ class SideNav extends React.Component {
         </Link>
 
         <Link
-                    to={"/search"}
+                    to={"/saved"}
                     className="sideNavLink"
         >
             <img className="sideNavImg" src={save}/>

@@ -8,7 +8,7 @@ import thumb from "./../../assets/thumb.jpg";
 import { Link } from "react-router-dom";
 
 
-let spectrum = /spectrum/i;
+let spectrum = /planet/i;
 
 class Search extends React.Component {
   state = {
@@ -45,10 +45,10 @@ class Search extends React.Component {
         </div>
 
         <div className="cardTextContain">
-          <h3 className="cardText">Title</h3>
+          <h3 className="cardText">Learn The Planets - Song (Mom's Spaghetti)</h3>
           <div className="ByContain">
             <h3 className="By">By:</h3>
-            <h4 className="channelName">Justin</h4>
+            <h4 className="channelName">SourOri</h4>
           </div>
         </div>
       </Link>
