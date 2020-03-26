@@ -14,8 +14,8 @@ import Signup from "./components/signup/signup.js";
 import Verified from "./components/verified/verified.js";
 // import StudyGroup from "./components/studyGroup/studyGroup.js";
 // import Kin201 from "./components/kin201/kin201.js";
-// import Construction from "./components/construction/construction.js";
-// import Saved from "./components/saved/saved";
+import Construction from "./components/construction/construction.js";
+import Saved from "./components/saved/saved";
 
 class App extends React.Component {
   state = { query: "", mode: "land", update: 0, pull: [] };
@@ -95,9 +95,9 @@ class App extends React.Component {
           <Route path="/signUp" exact component={Signup} />
           <Route path="/verified" exact component={Verified} />
           {/* <Route path="/studyGroups" exact component={StudyGroup} />
-          <Route path="/kin201" exact component={Kin201} />
+          <Route path="/kin201" exact component={Kin201} /> */}
           <Route path="/saved" exact component={Saved} />
-          <Route path="/notBuilt" exact component={Construction} /> */}
+          <Route path="/notBuilt" exact component={Construction} />
 
         </Switch>
       </Router>
