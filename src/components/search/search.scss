@@ -97,6 +97,7 @@
     flex-direction: column;
     font-size: 1.2em;
     text-decoration: none;
+    margin-bottom: 3%;
 }
 
 .cardText{
@@ -105,6 +106,9 @@
     font-size: 0.9em;
     margin: 0px;
     height: 70%;
+    width: auto;
+    white-space: nowrap;
+    overflow: hidden;
     text-overflow: ellipsis;
 }
 

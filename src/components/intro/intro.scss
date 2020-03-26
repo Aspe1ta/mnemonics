@@ -257,7 +257,7 @@
   margin-top: 8%;
   border-color: #02012f transparent;
   border-style: solid;
-  border-width: 22px 15px 0px 15px;
+  border-width: 19px 13px 0px 13px;
   height: 0px;
   width: 0px;
 }
@@ -280,7 +280,7 @@
 
 .howBox {
   width: 90%;
-  height: 60%;
+  height: 50%;
   display: flex;
   justify-content: space-evenly;
 }
@@ -307,7 +307,6 @@
   width: 100%;
   background-color: white;
   margin-top: 2%;
-  height: 90vh;
   margin-bottom: 5%;
 }
 
@@ -321,6 +320,7 @@
   width: 100%;
   height: 50%;
   display: flex;
+  margin-bottom: 3%;
 }
 
 .aboutTextContain {
@@ -376,7 +376,6 @@
 .compassHintText {
   color: white;
   margin: 0px;
-  margin-top: 5%;
 }
 
 .compassContain {
@@ -389,7 +388,7 @@
   height: 70%;
   margin-right: 10%;
   margin-left: 10%;
-  margin-top: 10%;
+  margin-top: 5%;
   display: flex;
   flex-direction: column;
 }

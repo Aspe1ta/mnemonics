@@ -194,9 +194,7 @@ class Main extends React.Component {
                 </h2>
               )}
               <div className="line"></div>
-              <div className="likeContain">
-                <img className="likeButton" src={home} />
-              </div>
+              
             </div>
             <div className="embedContain">
               <iframe
