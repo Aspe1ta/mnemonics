@@ -2,8 +2,9 @@ import React from "react";
 import { Link } from 'react-router-dom';
 import "./landing.scss";
 import Header from "./../header/header.js";
+import SideNav from "./../sideNav/sideNav.js";
 import Search from "./../search/search.js";
-import icon from "./../../assets/search.png"
+import icon from "./../../assets/search.png";
 
 class Landing extends React.Component {
   constructor(props) {
@@ -23,6 +24,7 @@ class Landing extends React.Component {
     return (
       <>
         <Header call={this.props.call}></Header>
+        <SideNav></SideNav>
 
         <div className="landContain">
           <div className="mainContain">

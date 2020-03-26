@@ -81,7 +81,7 @@ class Intro extends React.Component {
 
           <div className="aboutContain">
             <h1 className="aboutHeader">About</h1>
-
+            
             <div className="textImgContain">
               <div className="aboutTextContain">
                 <h1 className="whatHeader">What is a "Mnemonic"?</h1>
