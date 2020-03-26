@@ -1,8 +1,26 @@
 import React from "react";
 import "./intro.scss";
+import * as Scroll from "react-scroll";
+import ScrollAnimation from 'react-animate-on-scroll';
 import Header from "./../header/header.js";
 import { Link } from "react-router-dom";
-import introImg from "./../../assets/introImg.jpg";
+import introImg from "./../../assets/introImg.png";
+
+import trophy from "./../../assets/Trophy.png";
+
+import Step1 from "./../../assets/Step1.png";
+import Step2 from "./../../assets/Step2.png"
+import Step3 from "./../../assets/Step3.png"
+import ABC from "./../../assets/ABC.png";
+import Screen from "./../../assets/Screen.png";
+import Compass from "./../../assets/Compass.png";
+import Prices from "./../../assets/Prices.png";
+
+let ScrollLink = Scroll.Link;
+let Element = Scroll.Element;
+let Events = Scroll.Events;
+let scroll = Scroll.animateScroll;
+let scrollSpy = Scroll.scrollSpy;
 
 class Intro extends React.Component {
   render() {
@@ -28,22 +46,36 @@ class Intro extends React.Component {
               <img className="IntroImg" src={introImg} />
             </div>
 
-            <div className="arrowContain">
+            <ScrollLink
+        to="About"
+        spy={true}
+        smooth={true}
+        hashSpy={true}
+        offset={-100}
+        duration={2000}
+        delay={0}
+        isDynamic={true} className="arrowContain">
               <div className="arrow"> </div>
-            </div>
+            </ScrollLink>
 
             <div className="introRight"></div>
           </div>
 
-          <div className="howContain">
-            <h1 className="howHeader">How it works</h1>
+          <div name="About" className="howContain">
+            <h1  className="howHeader">How it works</h1>
 
             <div className="howBox">
-              <div className="Step1Contain"></div>
+              <ScrollAnimation animateIn="fade-in1" className="Step1Contain">
+              <img src={Step1} className="IntroImg"/>
+              </ScrollAnimation>
+                
+              <ScrollAnimation animateIn="fade-in2" className="Step2Contain">
+                <img src={Step2} className="IntroImg"/>
+              </ScrollAnimation>
 
-              <div className="Step1Contain"></div>
-
-              <div className="Step1Contain"></div>
+              <ScrollAnimation animateIn="fade-in3" className="Step3Contain">
+                <img src={Step3} className="IntroImg"/>
+              </ScrollAnimation>
             </div>
           </div>
 
@@ -63,13 +95,17 @@ class Intro extends React.Component {
                 </p>
               </div>
 
-              <div className="abcContain"></div>
+              <div className="abcContain">
+                <img src={ABC} className="IntroImg"/>
+              </div>
             </div>
 
             <div className="textImgContain">
               
 
-              <div className="screenContain"></div>
+              <div className="screenContain">
+                <img src={Screen} className="IntroImg"/>
+              </div>
 
               <div className="aboutWhatContain">
                 <h1 className="whatHeader">What We Do</h1>
@@ -95,8 +131,6 @@ class Intro extends React.Component {
                 <h2 className="compassHintText">We like to say:</h2>
                 <h2 className="compassText">Never Eat Sour Watermelon!</h2>
                 
-                
-                
               </div>
             </div>
 
@@ -105,11 +139,43 @@ class Intro extends React.Component {
             
 
             <div className="introRight">
-              <div className="compassContain">
-                
-              </div>
+              <ScrollAnimation animateIn="roll-in-right" className="compassContain">
+                <img src={Compass} className="IntroImg"/>
+              </ScrollAnimation>
             </div>
           </div>
+
+
+          <div className="howContain">
+            <h1 className="howHeader">Plans & Features</h1>
+            <h2 className="planHeader">Find a plan that suits you best</h2>
+
+            <ScrollAnimation animateIn="slide-in-fwd-bottom" className="priceContain">
+              <img src={Prices} className="IntroImg"/>
+            </ScrollAnimation>
+              
+          </div>
+
+          <div className="trophyContain">
+            <div className="trophyImgText">
+              <div className="trophyImg">
+                <img src={trophy} className="IntroImg"/>
+              </div>
+
+              <div className="textButton">
+
+              <h2 className="trophyHeader">Ready to become a memory champion?</h2>
+
+              <Link to="/signUp" className="signButton">
+                  <h2 className="tryText">Sign-Up!</h2>
+              </Link>
+
+              </div>
+
+            </div>
+          </div>
+
+
 
         </div>
       </>

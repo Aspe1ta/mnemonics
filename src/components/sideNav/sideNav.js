@@ -1,7 +1,8 @@
 import React from "react";
 import "./sideNav.scss";
 import { Link } from 'react-router-dom';
-import home from "./../../assets/Home.png"
+import home from "./../../assets/Home.png";
+import Group from "./../../assets/Group.png";
 
 class SideNav extends React.Component {
 
@@ -25,7 +26,7 @@ class SideNav extends React.Component {
                     to={"/studyGroups"}
                     className="sideNavLink"
         >
-            <img className="sideNavImg" src={home}/>
+            <img className="sideNavImg" src={Group}/>
             <h4 className="sideNavText">Group Study</h4>
         </Link>
 

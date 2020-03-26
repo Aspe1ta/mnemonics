@@ -1,4 +1,5 @@
 import React from "react";
+import ScrollAnimation from 'react-animate-on-scroll';
 import "./search.scss";
 import Header from "./../header/header.js";
 import SideNav from "./../sideNav/sideNav.js";

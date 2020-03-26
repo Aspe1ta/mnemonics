@@ -33,7 +33,7 @@ margin-right: 5%;
 
 .line{
     height: 1px;
-    background-color: black;
+    background-color: #02012F;
     width: 100%;
     margin-right: 5%;
 }
@@ -84,7 +84,7 @@ align-items: center;
     width: 100%;
     height: 20%;
     overflow-y: scroll;
-    border-left: solid 2px black;
+    border-left: solid 2px #02012F;;
 }
 
 .descriptionTextContain{
@@ -157,9 +157,9 @@ align-items: center;
     margin-left: auto;
     justify-content: space-evenly;
     border-style: solid;
-    border: black 2px thin;
+    border: #02012F 2px thin;
     text-decoration: none;
-    border-color: black;
+    border-color: #02012F;;
 }
 
 
@@ -180,7 +180,7 @@ align-items: center;
     height: 3vw;
     width: 3vw;
     
-    border: 1px black solid;
+    border: 1px #02012F solid;
     border-radius: 50%;
     box-shadow: none;
     cursor: pointer;
