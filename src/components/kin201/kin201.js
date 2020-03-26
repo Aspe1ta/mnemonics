@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import Header from "./../header/header.js";
 import SideNav from "./../sideNav/sideNav.js";
 
-import KIN from "./../../assets/KIN.png"
+import groupImg from "./../../assets/AustinAssets-26.png";
 
 
 class Kin201 extends React.Component {
@@ -21,7 +21,7 @@ class Kin201 extends React.Component {
     <SideNav></SideNav>
 
         <Link to="kin201" className="ImgContain">
-            <img className="StudyGroupImg" src={KIN}/>
+            <img className="StudyGroupImg" src={groupImg}/>
         </Link>
       </>
     );
