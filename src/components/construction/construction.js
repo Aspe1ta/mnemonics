@@ -5,8 +5,6 @@ import "./construction.scss";
 import Header from "./../header/header.js";
 import SideNav from "./../sideNav/sideNav.js";
 
-import KIN from "./../../assets/KIN.png"
-
 
 class Construction extends React.Component {
 
